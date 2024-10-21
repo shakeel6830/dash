@@ -8,6 +8,7 @@ df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/gapmi
 
 # Initialize the app
 app = Dash()
+server=app.server
 
 # Get a list of countries for the dropdown
 countries = df['country'].unique()
