@@ -10,6 +10,7 @@ df = pd.read_csv(url)
 
 # Initialize the Dash app
 app = dash.Dash(__name__)
+server=app.server
 
 # App layout
 app.layout = html.Div(style={'backgroundColor': 'black', 'color': 'white', 'padding': '20px', 'height': '100vh'}, children=[
